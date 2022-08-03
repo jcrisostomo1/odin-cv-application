@@ -1,5 +1,6 @@
 import React from 'react';
 import General from "./components/General.js"
+import Education from "./components/Education.js"
 import './styles/App.css' 
 import 'font-awesome/css/font-awesome.min.css';
 
@@ -11,6 +12,8 @@ const App = () => {
       </header>
       <main>
         <General title="General Information" />
+        <h3>Education</h3>
+        <Education />
       </main>
       <footer>
         <a href="https://github.com/jcrisostomo1" rel="noreferrer" target="_blank"><i className="fa fa-github fa-lg"></i></a>
