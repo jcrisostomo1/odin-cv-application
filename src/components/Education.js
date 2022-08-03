@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import educationStyles from '../styles/Education.module.css';
 
-export default function Education() {
+const Education = (props) => {
 	const [educationInfo, setEducationInfo] = useState({
 		university: '',
 		city: '',
@@ -27,6 +27,7 @@ export default function Education() {
 	}
 
 	const { university, city, degree, subject, edStart, edEnd } = educationInfo;
+	const { id, handleDelete } = props;
 	if (!editMode) {
 		return (
 			<>
@@ -69,9 +70,11 @@ export default function Education() {
 				</div>
 				<div className={educationStyles.button}>
 					<button>Save</button>
-					<button>Delete</button>
+					<button type="button" onClick={()=> {handleDelete(id)}}>Delete</button>
 				</div>
 			</form>
 		</div>
 	)
 }
+
+export default Education;

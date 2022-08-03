@@ -9,14 +9,16 @@ const App = () => {
   const [educationIds, setEducationIds] = useState([]);
 
   const addComponent = () => {
-    setEducationIds((prevInfo) => {
-      return [...prevInfo, uniqid()]
-    });
+    setEducationIds((prevInfo) => [...prevInfo, uniqid()]);
   };
 
-  const renderSectionComponent = () => {
-    return educationIds.map((id) => (<Education key={id} id={id}/>))
+  const handleDelete = (id) => {
+    setEducationIds((prevInfo) => {
+      return prevInfo.filter((key) => key !== id);
+    });
   }
+
+  const renderSectionComponent = () => educationIds.map((id) => (<Education key={id} id={id} handleDelete={handleDelete}/>))
   
 
   return (
