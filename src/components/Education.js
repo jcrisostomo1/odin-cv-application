@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import educationStyles from '../styles/Education.module.css'
+import React, {useState} from 'react';
+import educationStyles from '../styles/Education.module.css';
 
 export default function Education() {
 	const [educationInfo, setEducationInfo] = useState({

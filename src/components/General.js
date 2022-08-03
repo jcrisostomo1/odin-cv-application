@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import generalStyles from '../styles/General.module.css'
+import React, {useState} from 'react';
+import generalStyles from '../styles/General.module.css';
 
 const General = (props) => {
 
