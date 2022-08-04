@@ -11,7 +11,7 @@ const Education = (props) => {
 		edEnd: '',
 	});
 
-	const [editMode, seteditMode] = useState(true);
+	const [editMode, setEditMode] = useState(true);
 
 	const handleChange = (e) => {
 		const { id, value } = e.target;
@@ -23,7 +23,7 @@ const Education = (props) => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		seteditMode((prevInfo) => !prevInfo);
+		setEditMode((prevInfo) => !prevInfo);
 	};
 
 	const { university, city, degree, subject, edStart, edEnd } = educationInfo;
@@ -71,8 +71,8 @@ const Education = (props) => {
 					<input onChange={handleChange} value={edEnd} type="date" id="edEnd" required/>
 				</div>
 				<div className={educationStyles.button}>
-					<button>Save</button>
-					<button type="button" onClick={()=>{handleDelete(id)}}>Delete</button>
+					<button type="submit">Save</button>
+					<button type="button" onClick={()=>{handleDelete("educationIds", id)}}>Delete</button>
 				</div>
 			</form>
 		</div>
