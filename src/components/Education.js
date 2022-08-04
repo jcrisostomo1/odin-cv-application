@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Text from '../components/Text.js'
 import educationStyles from '../styles/Education.module.css';
 
 const Education = (props) => {
@@ -31,15 +32,16 @@ const Education = (props) => {
 
 	if (!editMode) {
 		return (
-			<>
-				<p>{university}</p>
-				<p>{city}</p>
-				<p>{degree}</p>
-				<p>{subject}</p>
-				<p>{edStart}</p>
-				<p>{edEnd}</p>
-				<button onClick={handleSubmit}>Edit</button>
-			</>
+			<Text 
+      university={university}
+      city={city}
+      degree={degree}
+      subject={subject}
+      edStart={edStart}
+      edEnd={edEnd}
+      handleEdit={handleSubmit}
+      />
+				
 		);
 	};
 

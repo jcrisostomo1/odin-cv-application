@@ -44,7 +44,8 @@ const App = () => {
         <h1>CV Application 2.0</h1>
       </header>
       <main>
-        <General title="General Information" />
+        <h3>General Information</h3>
+        <General />
         <h3>Education</h3>
         {renderEdComponents()}
         <button onClick={()=>handleAddSection('educationIds')}>Add Education</button>

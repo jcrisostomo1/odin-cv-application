@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Text from '../components/Text.js'
 import experienceStyles from '../styles/Experience.module.css';
 
 const Experience = (props) => {
@@ -30,13 +31,14 @@ const Experience = (props) => {
 
 	if(!editMode) {
 		return (
-			<>
-				<p>{companyName}</p>
-				<p>{positionTitle}</p>
-				<p>{jobDescription}</p>
-				<p>{exStart}</p>
-				<p>{exEnd}</p>
-			</>
+			<Text 
+				companyName={companyName}
+				positionTitle={positionTitle}
+				jobDescription={jobDescription}
+				exStart={exStart}
+				exEnd={exEnd}
+        handleEdit={handleSubmit}
+			/>
 		);
 	};
 
