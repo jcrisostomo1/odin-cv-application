@@ -24,3 +24,11 @@
 button {
   grid-column: span 2;
 }
+
+.textarea {
+  width: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+  word-wrap: break-word;
+  grid-column: span 2;
+}

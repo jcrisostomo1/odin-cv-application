@@ -36,7 +36,7 @@ const Text = (props) => {
           <p><span className={textStyles.bold}>Position: </span>{props.positionTitle}</p>
           <p><span className={textStyles.bold}>Start: </span>{props.exStart}</p>
           <p><span className={textStyles.bold}>End: </span>{props.exEnd}</p>
-          <p><span className={textStyles.bold}>Job Description: </span>{props.jobDescription}</p>
+          <p className={textStyles.textarea}><span className={textStyles.bold}>Job Description: </span>{props.jobDescription}</p>
           <button type='button' onClick={props.handleEdit}>Edit</button>
         </div>
     </div>
