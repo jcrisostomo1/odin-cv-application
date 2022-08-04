@@ -24,10 +24,11 @@ const Education = (props) => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		seteditMode((prevInfo) => !prevInfo);
-	}
+	};
 
 	const { university, city, degree, subject, edStart, edEnd } = educationInfo;
 	const { id, handleDelete } = props;
+
 	if (!editMode) {
 		return (
 			<>
@@ -39,8 +40,9 @@ const Education = (props) => {
 				<p>{edEnd}</p>
 				<button onClick={handleSubmit}>Edit</button>
 			</>
-		)
-	}
+		);
+	};
+
 	return (
 		<div className={educationStyles.main}>
 			<form className={educationStyles.form} action='' onSubmit={handleSubmit}>
@@ -70,11 +72,11 @@ const Education = (props) => {
 				</div>
 				<div className={educationStyles.button}>
 					<button>Save</button>
-					<button type="button" onClick={()=> {handleDelete(id)}}>Delete</button>
+					<button type="button" onClick={()=>{handleDelete(id)}}>Delete</button>
 				</div>
 			</form>
 		</div>
-	)
-}
+	);
+};
 
 export default Education;

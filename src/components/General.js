@@ -36,7 +36,7 @@ const General = (props) => {
 			<p>{phone}</p>
 			<button onClick={handleSubmit}>Edit</button>
 			</>
-		)
+		);
 	};
 		return (
     <>
@@ -65,7 +65,7 @@ const General = (props) => {
         </form>
       </div>
     </>
-  )
+  );
 };
 
 export default General;

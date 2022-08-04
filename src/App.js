@@ -16,11 +16,12 @@ const App = () => {
     setEducationIds((prevInfo) => {
       return prevInfo.filter((key) => key !== id);
     });
+  };
+
+  const renderSectionComponent = () => {
+    return educationIds.map((id) => (<Education key={id} id={id} handleDelete={handleDelete}/>));
   }
-
-  const renderSectionComponent = () => educationIds.map((id) => (<Education key={id} id={id} handleDelete={handleDelete}/>))
   
-
   return (
     <div>
       <header>
@@ -38,6 +39,6 @@ const App = () => {
       </footer>
     </div>
   );
-}
+};
 
 export default App;
