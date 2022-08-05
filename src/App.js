@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import General from "./components/General.js";
-import Education from "./components/Education.js";
-import Experience from './components/Experience.js';
+import General from "./components/General.jsx";
+import Education from "./components/Education.jsx";
+import Experience from './components/Experience.jsx';
 import uniqid from 'uniqid';
 import './styles/App.css' ;
 import 'font-awesome/css/font-awesome.min.css';

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Text from '../components/Text.js'
+import Text from './Text.jsx'
 import educationStyles from '../styles/Education.module.css';
 
 const Education = (props) => {

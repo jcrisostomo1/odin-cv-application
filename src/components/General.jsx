@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Text from './Text';
+import Text from './Text.jsx';
 import generalStyles from '../styles/General.module.css';
 
 const General = (props) => {

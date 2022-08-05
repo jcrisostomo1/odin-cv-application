@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Text from '../components/Text.js'
+import Text from './Text.jsx'
 import experienceStyles from '../styles/Experience.module.css';
 
 const Experience = (props) => {
